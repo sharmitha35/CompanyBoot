@@ -1,0 +1,9 @@
+li a:hover{
+ opacity: 1;
+}
+li a{
+  opacity: 0.75;
+}
+marquee{
+  font-size:large;
+}

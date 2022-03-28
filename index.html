@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CompanyBootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+
+.navbar-default {
+  background-color: #69899f;
+  border-color: #425766;
+}
+.navbar-default .navbar-brand {
+  color: #d7e2e9;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #e5dbdb;
+}
+.navbar-default .navbar-text {
+  color: #d7e2e9;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #d7e2e9;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #e5dbdb;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #69899f;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #d7e2e9;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #e5dbdb;
+  background-color: #425766;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #69899f;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #e5dbdb;
+  background-color: #425766;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #e5dbdb;
+  background-color: #425766;
+}
+.navbar-default .navbar-toggle {
+  border-color: #425766;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #425766;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #d7e2e9;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #d7e2e9;
+}
+.navbar-default .navbar-link {
+  color: #d7e2e9;
+}
+.navbar-default .navbar-link:hover {
+  color: #e5dbdb;
+}
+.sm-icons {
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #d7e2e9;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #e5dbdb;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #e5dbdb;
+    background-color: #425766;
+  }
+  .sm-icons .nav-item {
+    padding-right: 1em;
+    flex-direction: row;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    color: #000000;
+    font-size: 1.em;
+}
+.navbar .navbar-nav .nav-link {
+    color: #000000;
+    font-size: 1.1em;
+}
+#section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+  #section4 {padding-top:50px;height:500px;color: #fff; background-color:#1E88E5;}
+  #section5 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+}
+
+</style>
+</head>
+<body class="background-color:">
+<div class="container-fluid">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+      <span class="icon-envelope"></span>
+      </button>
+      <a href="#" class="navbar-brand"></a>
+      <img src="./Wipro_Logo.webp"  width="65" alt="comp" class="d-inline-block align-middle mr-2">
+      <span class="text-uppercase font-weight-bold" style="margin-right:100px;">Wipro</span>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="https://www.wipro.com/about-us/">About Wipro <span class="sr-only">(current)</span></a></li>
+        <li><a href="https://www.wipro.com/cybersecurity/">Cyber Security</a></li>
+        <li><a href="https://www.wipro.com/cloud/">Cloud</a>
+        <li><a href="https://www.wipro.com/digital/">Digital</a></li>
+        <li><a href="https://www.wipro.com/engineeringNXT/">EngineeringNXT</a></li>
+        <li><a href="https://www.wipro.com/holmes/">Holmes</a></li>
+
+
+
+
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Industries <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="https://www.wipro.com/automotive/">Automotive</a></li>
+          <li><a href="https://www.wipro.com/banking/">Banking</a></li>
+          <li><a href="https://www.wipro.com/communications-/">Communication</a></li>
+          <li><a href="https://www.wipro.com/education/">Education</a></li>
+          <li><a href="https://www.wipro.com/insurance/">Insurance</a></li>
+          <li><a href="https://www.jquery-az.com/bootstrap-form-customized-styles-6-online-examples/">Forms</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="https://www.jquery-az.com/bootstrap-select-5-beautiful-styles/">Select</a></li>
+        </ul>
+
+
+
+
+
+
+
+
+
+
+        <li class="dropdown">
+         <!--<a href="https://www.jquery-az.com/bootstrap-tips-tutorials/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Industries <span class="caret"></span></a>-->
+         <li><a href="https://www.facebook.com/WiproLimited"><img src="./Facebook_Logo.png" style="width:20px;"alt="facebook"></a></li>
+         <li><a href="https://www.instagram.com/wiprolimited/?hl=en"><img src="./Instagram_logo_2016.svg.webp" style="width:20px;"alt="instagram"></a></li>
+         <li><a href="https://www.linkedin.com/company/wipro/"><img src="./linkedin.png" style="width:20px;"alt="linkedin"></a></li>
+         <li><a href="https://twitter.com/wipro"><img src="./twitterlogo.jpg" style="width:20px;"alt="twitter"></a></li>
+         <li><a href="https://www.wipro.com/">
+          <button type="button" class="btn btn-info">
+            <span class="glyphicon glyphicon-search"></span> Search
+          </button>
+        </a></li>
+          <ul class="dropdown-menu">
+            <li><a href="https://www.wipro.com/automotive/">Automotive</a></li>
+            <li><a href="https://www.wipro.com/banking/">Banking</a></li>
+            <li><a href="https://www.wipro.com/communications-/">Communication</a></li>
+            <li><a href="https://www.wipro.com/education/">Education</a></li>
+            <li><a href="https://www.wipro.com/insurance/">Insurance</a></li>
+            <li><a href="https://www.jquery-az.com/bootstrap-form-customized-styles-6-online-examples/">Forms</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://www.jquery-az.com/bootstrap-select-5-beautiful-styles/">Select</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      
+
+
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://careers.wipro.com/careers-home">Careers</a></li>
+            <li><a href="https://www.wipro.com/en-IN/overview/">Overview</a></li>
+          </ul> 
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse --
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!--<center><img src="./wipro_logo_before_after.jpg" alt="Wipro" width="1000" height="300"><hr></center>-->
+<center><a href="./form.html"><button type="button" style="width:100px;height:50px;"class="btn btn-dark"  data-bs-toggle="tooltip">contact us</button></a></center
+<br><br>
+
+
+
+  <marquee class="e bg-warning" direction="right" height="50" width="100%" scrollamount="20"><strong font-size="100px" >!!!Wipro Job offers!!!</strong></marquee>
+  <fieldset style="background-color:whitesmoke;">
+
+    <video width="1300" height="400" autoplay muted>
+      <source src="./careers-home.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+
+
+
+<center><div class="container">
+  <div class="row">
+    <div class="card col-sm-4" style="width: 38rem;"> 
+     <h4 class="card-title">Chennai</h4>
+     <img class="card-img-top" src="./chennai.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+     <p class="card-text"></p>
+     <a href="https://www.tradeindia.com/Seller-28104535-Wipro/?msclkid=f13ac05bad0911ec9e179acd893fc7ab" class="btn btn-primary">Go somewhere</a>
+    </div>
+    </div>
+    <div class="card col-sm-4" style="width: 38rem;"> 
+      <h4 class="card-title">Bangalore</h4>
+      <img class="card-img-top" src="./electronic-city-campus.jpg" alt="Card image" style="width:100%">
+     <div class="card-body">
+      <p class="card-text"></p>
+      <a href="https://aboutkarnataka.com/wipro-offices-in-bangalore/?msclkid=0c1f51e1ad0a11ecbab408c61d5321d8" class="btn btn-primary">Go somewhere</a>
+     </div>
+     </div>
+     <div class="card col-sm-4" style="width: 38rem;"> 
+      <h4 class="card-title">Coimbatore</h4>
+      <img class="card-img-top" src="./coimbatore.jpg" alt="Card image" style="width:100%">
+     <div class="card-body">
+      <p class="card-text"></p>
+      <a href="https://in.indeed.com/cmp/Wipro/reviews?fcountry=IN&floc=Coimbatore%2c+Tamil+Nadu&msclkid=2f312ee5ad0a11eca093effa7a82e494" class="btn btn-primary">Go somewhere</a>
+     </div>
+     </div>
+     </div>
+     </div></center>
+     </fieldset>
+
+    
+    <div class="container-fluid p-5 bg-info text-black text-center">
+      <h1 style="color: #000000; font-size: 17px;">About Wipro</h1>
+      <p style="color  #000000;">Wipro Limited (NYSE: WIT, BSE: 507685, NSE: WIPRO) is a leading global information technology, consulting and business process services company.</p> 
+    </div>
+      
+    
+    <nav class="navbar navbar-inverse ">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+          </button>
+        </div>
+
+
+
+        <div>
+          <div class="container margin-right:100px bg-dark" >
+            <ul class="nav navbar-nav">
+              <li><a href="#section1">Spirit Of Wipro</a></li>
+              <li><a href="#section2">Privacy At Wipro</a></li>
+              <li><a href="#section3">Inclusion and Diversity</a></li>
+              <li><a href="#section4">Our Strategy</a></li>
+              <li><a href="#section4">Supplier Diversity</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+ 
+    <div class="container-fluid p-5 bg-warning text-black text-center">
+      <div id="section1" class="container-fluid ">
+      <h1>Spirit Of Wipro</h1>
+      <p>The Spirit of Wipro is the core of Wipro. These are our Values. It is about who we are. It is our character. It is reflected consistently in all our behavior. The Spirit is deeply rooted in the unchanging essence of Wipro. But it also embraces what we must aspire to be. It is the indivisible synthesis of the four values. The Spirit is a beacon. It is what gives us direction and a clear sense of purpose. It energizes us and is the touchstone for all that we do.</p>
+     
+      <div></div>
+    </div>
+    <div id="section2" class="container-fluid">
+      <h1>Privacy At Wipro</h1>
+      <p>At Wipro, we strive to embed privacy in the technologies we create and the services we deliver. We promote a culture that values privacy through awareness and protect privacy of individuals through guidance, direction and imposition.</p>
+    </div>
+    <div id="section3" class="container-fluid">
+      <h1>Inclusion and Diversity</h1>
+      <p>Inclusion is a way of life at Wipro, evidenced by our steadfast commitment to integrating diversity into all aspects of our work and encouraging all Wiproites to be their authentic selves at all times. We recognize the immense talent and potential from all walks of life and create and nurture a sense of belonging through equitable practices by embracing all forms of differences.
+
+        We aspire to help our clients maximize the value of their businesses. And make Wipro an employer of choice that attracts, develops, and retains a productive and diverse talent base of 230,000+ employees representing 134 nationalities across 67 countries.</p>
+    </div>
+    <div id="section4" class="container-fluid">
+      <h1>Our Strategy</h1>
+      <p>On November 18, 2020, Wipro's CEO and MD, Thierry Delaporte and members of the Executive Leadership team presented a strategic plan to investors and analysts. Watch the presentations to learn how Wipro's bold new vision will strengthen our global leadership, drive innovative solutions for our customers, and generate sustainable value for shareholders.</p>
+    </div>
+    <div id="section5" class="container-fluid">
+      <h1>Supplier Diversity</h1>Supplier Diversity
+      <p>Diversity and inclusion are intrinsic to Wipro’s business. We are committed to developing an inclusive supply chain that mirrors communities and consumers it serves.
+        We believe that diverse businesses shall have equal opportunity to compete for contracts and subcontracts held by Wipro. Wipro promises to support diverse businesses in all its business geographies by sourcing goods and services from diverse businesses as much as possible.</p>
+    </div>
+    
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container p-5 my-5 ">
+    <center><button type="button" class="btn btn-primary text-center p-5"style="padding:10px 20px 10px 20px;">Contact Us</button></center>
+    <center><div class="container bg-warning p-2 m-10" style="width:50%;">
+      <center><div class="row text-center">
+      <form action="/action_page.php">
+        <div class="mb-4 mt-4">
+          <label for="fname">FIRST NAME:</label>
+          <input type="text" class="form-control" id="fname" placeholder="Enter firstname" name="fname">
+        </div>
+        <div class="mb-4 mt-4">
+          <label for="=lname">LAST NAME:</label>
+          <input type="text" class="form-control" id="lname" placeholder="Enter lastname" name="lname">
+        </div>
+        <div class="mb-4 mt-4">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="mb-4">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+        <label for="country" class="form-label">Choose your country:</label>
+        <input class="form-control" list="country" name="country" id="country">
+        <datalist id="country">
+          <option value="America">
+          <option value="Brazil">
+          <option value="China">
+          <option value="India">
+          <option value="Sri Lanka">
+        </datalist>  
+        <div class="mb-3 mt-3">
+          <label for="message">Message:</label>
+          <textarea class="form-control" rows="5" id="message" name="text"></textarea>
+        </div>
+        <div class="form-check mb-3">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    </div>   
+  </div>  </center>
+</div>   </center>
+</div>     
+
+
+       
+
+<footer>
+<div id="last" class="container-fluid mt-5 bg-info">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Services</h3> <b><hr></b>
+        <ul>
+            <li>Applications</li>
+            <li>Consulting</li>
+            <li>infrastructure services</li>
+            <li>Systems Engineering</li>
+            <li>Digital operations</li>
+            <li>Data Analytics</li>
+            <li>Artificial Intelligence</li>
+           <br><br><br>
+           
+
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <B><h3>Industries</h3></B> <b><hr></b>
+        <ul>
+            <li>Automotive</li>
+            <li>Aerospace</li>
+            <li>Banking</li>
+            <li>Capital Markets</li>
+            <li>Education</li>
+            <li>Healthcare</li>
+            <li>Insurance</li>
+           <br><br><br>
+        </ul>
+      
+    </div>
+      <div class="col-sm-4">
+        <h3>Content</h3>  <b><hr></b>
+        <ul>
+            <li>About</li>
+            <li>Cloud</li>
+            <li>Cyber Security</li>
+            <li>Digital</li>
+            <li>EngineeringNXT</li>
+            <li>Holmes</li>
+            <li>Services</li>
+           <br><br><br>
+        </ul>
+      </div>   
+
+  <hr class="mb-4">
+  <div class="row d-flex bg-warning justify-content-center">
+    <div>
+      <center><p>
+        Copyright 2022 All Rights Reserved By:
+        <a href="#" style="text-decoration:none;">
+        <strong class="text-info">The Providers</strong>
+      </a>
+      </p></center>
+    </div>
+  </div>
+  </div>
+  
+</footer>
+
+</body>
+</html>
+
